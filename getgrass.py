@@ -62,13 +62,12 @@ if __name__ == '__main__':
         _, contours, _ = cv2.findContours(thresh,0,1)
         for cnt in contours:
             area=cv2.contourArea(cnt)
-            if area < 2000 and area > 200:
-                M = cv2.moments(cnt)
-                cx,cy = int(M['m10']/M['m00']),int(M['m01']/M['m00'])
-                if cy > 240 and cy < 620:
-                    x,y,w,h = cv2.boundingRect(cnt)
-                    cv2.rectangle(img,(x,y),(x+w,y+h),(255,255,0),2)
-                    cv2.circle(img,(cx,cy),2,(0,0,255),3)
+            M = cv2.moments(cnt)
+            cx,cy = int(M['m10']/M['m00']),int(M['m01']/M['m00'])
+            if cy > 240 and cy < 620:
+                x,y,w,h = cv2.boundingRect(cnt)
+                cv2.rectangle(img,(x,y),(x+w,y+h),(255,255,0),2)
+                cv2.circle(img,(cx,cy),2,(0,0,255),3)
         cv2.imshow('original image',img)
         cv2.imwrite('resultimg.png',img)
         cv2.imshow('yellowGrass',thresh)
