@@ -37,3 +37,5 @@ n=[20,18,255,254]
 print solve([k*m[0]+b-m[1],k*m[2]+b-m[3]],[k,b])
 print solve([k*n[0]+b-n[1],k*n[2]+b-n[3]],[k,b])
 ``` 
+![二值图](doc/threshimg.png) 
+![框选图](doc/resultimg.png) 
