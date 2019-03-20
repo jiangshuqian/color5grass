@@ -21,5 +21,5 @@ np.savez('bGrass_data.npz',img_name=img_name,x_coordinate=x_coordinate,y_coordin
 ```
 ## linear_regression.py
 用来画出草和背景的数据值，方便观察，并用一条线将他们分开，用于以后的提取。
-![观察图1](./doc/Figure_1.svg)
-![观察图2](./doc/Figure_2.svg)
+[观察图1](./doc/Figure_1.svg)
+[观察图2](./doc/Figure_2.svg)
