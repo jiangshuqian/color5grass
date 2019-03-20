@@ -39,3 +39,6 @@ print solve([k*n[0]+b-n[1],k*n[2]+b-n[3]],[k,b])
 ``` 
 ![二值图](doc/threshimg.png) 
 ![框选图](doc/resultimg.png) 
+
+### end
+如果有疑问可以发我邮箱：nutshellqian@qq.com
